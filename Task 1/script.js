@@ -46,10 +46,12 @@ function listenToForm() {
     const kilogramsInput = Number(e.target.elements.search.value);
     // Checks if converted input value is actually a number
     if (!isNumber(kilogramsInput)) {
-      alert("Please enter a number!");
+      alert("Please enter a valid number!");
+      paintToDOM(0);
       form.reset();
     } else if (kilogramsInput < 0) {
       alert("Negative values not permitted!");
+      paintToDOM(0);
       form.reset();
     } else {
       paintToDOM(kilogramsInput);
