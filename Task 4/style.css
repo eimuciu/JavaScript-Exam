@@ -27,3 +27,33 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  width: 100%;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 50px auto;
+  
+}
+
+th, td {
+border: 1px solid black;  
+text-align: center;
+width: 50%;
+padding: 10px;
+}
+
+th {
+  color: white;
+}
+
+thead tr {
+  background-color: #2B303A;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #92DCE5;
+}
